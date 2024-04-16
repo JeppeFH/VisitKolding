@@ -154,7 +154,7 @@ header {
 
 .headline-img-1 a {
   font-size: 1.6rem;
-  padding: 1.3%;
+  padding: 1.2%;
   text-decoration: none;
   background-color: white;
   box-shadow: 10px 10px #ff9a64;
@@ -169,7 +169,7 @@ header {
   color: rgb(103, 103, 103);
 }
 
-/*Header Blog - Post 2*/
+/*Header Blog - Post 2 and 3*/
 .blog-container-subline {
   display: flex;
   flex-direction: column;
@@ -177,7 +177,8 @@ header {
   height: 100%;
 }
 
-.headline-img-2 {
+.headline-img-2,
+.headline-img-3 {
   background-image: url(/assets/img/bar.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -185,24 +186,31 @@ header {
   width: 100%;
   height: 100%;
   transition: all 250ms ease-in-out;
+}
+
+.headline-img-2 {
   margin-bottom: 10px;
 }
 
-.headline-img-2:hover {
-  background-size: 180%;
-}
-
-/*Header Blog - Post 3*/
 .headline-img-3 {
   background-image: url(/assets/img/bybillede_havn.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 150%;
-  width: 100%;
-  height: 100%;
-  transition: all 300ms ease-in-out;
 }
 
+.headline-img-2:hover,
 .headline-img-3:hover {
   background-size: 180%;
+}
+
+.headline-img-2 a,
+.headline-img-3 a {
+  font-size: 1.6rem;
+  padding: 1.2%;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: 10px 10px #ff9a64;
+  top: 80%;
+  left: 3%;
+  position: relative;
+  color: black;
+  font-weight: 500;
 }
