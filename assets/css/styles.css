@@ -342,6 +342,9 @@ header {
   font-size: 2.5rem;
 }
 
+.footer-først ul li a:hover {
+  color: white;
+}
 .footer-anden {
   background-color: rgb(237, 233, 233);
   padding: 40px;
