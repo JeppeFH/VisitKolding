@@ -126,10 +126,10 @@ nav img {
 header {
   max-width: 1200px;
   height: 620px;
-
   display: flex;
   gap: 10px;
   margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 /*Header Blog - Post 1*/
@@ -215,6 +215,94 @@ header {
   font-weight: 500;
 }
 
+/*Oplevelser*/
+.overview-oplevelser {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.overview-container {
+  width: 100%;
+  display: flex;
+  gap: 20%;
+  overflow: hidden;
+  align-items: center;
+}
+
+.overview-container div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 80px;
+  gap: 10px;
+}
+
+.overview-oplevelser h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.overview-oplevelser p {
+  line-height: 1.8;
+  font-size: 1.7rem;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+}
+
+.overview-oplevelser a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: start;
+  color: black;
+}
+
+.overview-oplevelser a:hover {
+  color: #ff9964;
+}
+
+@media screen and (max-width: 1048px) {
+  .overview-oplevelser {
+    width: 900px;
+  }
+
+  .overview-container {
+    gap: 10%;
+  }
+}
+
+.overview-oplevelser a:hover {
+  color: #ff9964;
+}
+
+@media screen and (max-width: 910px) {
+  .overview-oplevelser {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .overview-oplevelser h2 {
+    font-size: 1.8rem;
+  }
+
+  .overview-container {
+    gap: 40px;
+  }
+
+  .overview-oplevelser a {
+    font-size: 1.5rem;
+  }
+
+  .overview-oplevelser p {
+    font-size: 1.4rem;
+  }
+}
+
 /*Footer*/
 .footer-først {
   background-color: #ff9964;
@@ -227,12 +315,12 @@ header {
   color: black;
   margin: 0 auto;
   text-align: center;
-  padding-top: 40px;
+  padding: 20px;
   font-size: 36px;
-  padding-bottom: 40px;
 }
+
 .footer-først p {
-  font-size: 28px;
+  font-size: 1.5rem;
   display: flex;
   text-align: center;
   align-items: center;
@@ -248,10 +336,12 @@ header {
   text-align: center;
   align-items: center;
 }
+
 .footer-først li a {
   color: black;
-  font-size: 28px;
+  font-size: 2.5rem;
 }
+
 .footer-anden {
   background-color: rgb(237, 233, 233);
   padding: 40px;
@@ -261,23 +351,26 @@ header {
   flex-direction: column;
   margin: 0 auto;
   text-align: center;
-  padding-top: 40px;
 }
+
 .footer-anden h2 {
-  font-size: 32px;
-  padding-bottom: 40px;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
 }
+
 .footer-anden ul {
   list-style-type: none;
   display: flex;
   gap: 40px;
   justify-content: center;
 }
+
 .footer-anden ul li a {
   text-decoration: none;
   color: black;
-  font-size: 18px;
+  font-size: 1.4rem;
 }
+
 .footer-anden ul li a:hover {
   color: #ff9964;
 }
@@ -290,8 +383,9 @@ header {
   align-items: center;
   text-align: center;
 }
+
 .footer-tredje p {
   color: rgb(138, 132, 132);
-  font-size: 18px;
-  padding: 40px;
+  font-size: 1.3rem;
+  padding: 20px;
 }
