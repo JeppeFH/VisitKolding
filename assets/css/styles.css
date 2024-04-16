@@ -214,3 +214,84 @@ header {
   color: black;
   font-weight: 500;
 }
+
+/*Footer*/
+.footer-først {
+  background-color: #ff9964;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 36px;
+  padding-bottom: 40px;
+}
+.footer-først p {
+  font-size: 28px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-først ul {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+.footer-først li a {
+  color: black;
+  font-size: 28px;
+}
+.footer-anden {
+  background-color: rgb(237, 233, 233);
+  padding: 40px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+}
+.footer-anden h2 {
+  font-size: 32px;
+  padding-bottom: 40px;
+}
+.footer-anden ul {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.footer-anden ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.footer-anden ul li a:hover {
+  color: #ff9964;
+}
+
+.footer-tredje {
+  background-color: #ff9a64;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer-tredje p {
+  color: rgb(138, 132, 132);
+  font-size: 18px;
+  padding: 40px;
+}
