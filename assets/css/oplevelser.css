@@ -7,3 +7,113 @@
 html {
   font-size: 62.5%;
 }
+/*oplevelser*/
+.oplevelser {
+  display: flex;
+  margin: 0 auto;
+}
+.oplevelser img {
+  width: 720px;
+  height: auto;
+}
+.oplevelser-title {
+  width: 800px;
+  background-color: #ffff;
+  position: relative;
+  top: -50px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.oplevelser-title h2 {
+  font-size: 48px;
+  text-align: center;
+  align-items: center;
+}
+.oplevelser-title p {
+  font-size: 18px;
+  text-align: center;
+}
+.oplevelser-nav {
+  background-color: rgb(243, 237, 229);
+  display: flex;
+  max-width: 1800px;
+  height: 1000px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.oplevelser-nav h2 {
+  font-size: 36px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.oplevelser-nav-simple {
+  width: 60%;
+  height: 100%;
+}
+.img-1 {
+  background-image: url(/assets/img/danskmølle.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 250ms ease-in-out;
+}
+.img-1:hover {
+  background-size: 120%;
+}
+.img-1 a {
+  font-size: 16px;
+  padding: 1.2%;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: 10px 10px #ff9a64;
+  top: 88%;
+  left: 3%;
+  position: relative;
+  color: black;
+  font-weight: 500;
+}
+.img-1 a:hover {
+  color: rgb(103, 103, 103);
+}
+.oplevelser-anden {
+  width: 60%;
+  height: 100%;
+}
+.img-2 {
+  background-image: url(/assets/img/shopping1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 250ms ease-in-out;
+}
+.img-2:hover {
+  background-size: 120%;
+}
+.img-2 a {
+  font-size: 16px;
+  padding: 1.2%;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: 10px 10px #ff9a64;
+  top: 88%;
+  left: 3%;
+  position: relative;
+  color: black;
+  font-weight: 500;
+}
+.img-2 a:hover {
+  color: rgb(103, 103, 103);
+}
