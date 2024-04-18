@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body:not(nav) {
+  font-family: "Poppins", sans-serif;
+}
+
+/*Produkt Hoddie*/
+.produkt {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.produkt-container {
+  display: flex;
+  gap: 60px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+}
+
+.small-img-row {
+  display: flex;
+  gap: 5px;
+}
+
+.small-img:first-child {
+  border: 2px solid #ef8d58;
+}
+
+.buy-btn:hover {
+  background-color: #ef8d58;
+}
+
+.info h4 {
+  margin: 20px 0;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.info h3 {
+  font-size: 2.5rem;
+}
+
+.info p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.info h5 {
+  font-size: 1.5rem;
+  color: rgb(110, 110, 110);
+}
+
+.amount-and-size {
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.info select {
+  display: block;
+  padding: 10px;
+  width: 30%;
+}
+
+.info input {
+  width: 8%;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 1.7rem;
+  margin-right: 10px;
+  border: 1px solid #ff9964;
+}
+
+input:focus {
+  outline: none;
+}
+
+.colorways {
+  display: flex;
+}
+
+.colorways span {
+  width: 25px;
+  height: 25px;
+  background: rgb(243, 243, 243);
+  border-radius: 50%;
+  border: 2px solid #ff9964;
+  margin: 15px 20px 30px 0;
+}
+
+.colorways span:nth-child(2) {
+  background: peachpuff;
+  border: none;
+}
+
+.colorways span:nth-child(3) {
+  background: rgb(5, 85, 5);
+  border: none;
+}
+
+.colorways span:nth-child(4) {
+  background: black;
+  border: none;
+}
+
+.buy-btn {
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #ff9964;
+  color: white;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  bottom: 0;
+  width: 50%;
+}
