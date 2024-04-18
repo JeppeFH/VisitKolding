@@ -19,6 +19,13 @@ body:not(nav) {
   margin-top: 50px;
 }
 
+.shop h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 2px;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
@@ -55,7 +62,7 @@ body:not(nav) {
   margin-bottom: 20px;
 }
 
-.box .cart i {
+.cart i {
   position: absolute;
   top: 0;
   left: 0;

@@ -93,24 +93,29 @@ input:focus {
 .colorways span {
   width: 25px;
   height: 25px;
-  background: white;
+  background: red;
   border-radius: 50%;
   border: 2px solid #ff9964;
   margin: 15px 20px 30px 0;
 }
 
 .colorways span:nth-child(2) {
-  background: black;
+  background: green;
   border: none;
 }
 
 .colorways span:nth-child(3) {
-  background: rgb(96, 96, 213);
+  background: black;
   border: none;
 }
 
 .colorways span:nth-child(4) {
-  background: green;
+  background: rgb(246, 246, 246);
+  border: none;
+}
+
+.colorways span:nth-child(5) {
+  background: blue;
   border: none;
 }
 

@@ -100,17 +100,22 @@ input:focus {
 }
 
 .colorways span:nth-child(2) {
-  background: peachpuff;
+  background: black;
   border: none;
 }
 
 .colorways span:nth-child(3) {
-  background: rgb(5, 85, 5);
+  background: rgb(245, 245, 245);
   border: none;
 }
 
 .colorways span:nth-child(4) {
-  background: black;
+  background: rgb(5, 85, 5);
+  border: none;
+}
+
+.colorways span:nth-child(5) {
+  background: peachpuff;
   border: none;
 }
 
