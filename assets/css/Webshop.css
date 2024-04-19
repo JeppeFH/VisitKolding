@@ -12,6 +12,110 @@ body:not(nav) {
   font-family: "Poppins", sans-serif;
 }
 
+/*Header*/
+.header-shop {
+  width: 100%;
+  background-color: rgb(234, 234, 234);
+  padding-bottom: 40px;
+}
+
+.header-shop header {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-shop-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-shop-info h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 10rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.header-shop-info p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
+.header-shop img {
+  margin-left: auto;
+  background-color: rgb(205, 205, 205);
+  border-radius: 20%;
+  margin-top: 40px;
+}
+
+.shop-btn {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background: #ff9964;
+  color: white;
+  border: 2px solid black;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.shop-btn:hover {
+  color: rgb(232, 232, 232);
+}
+
+@media screen and (max-width: 1218px) {
+  .header-shop-info p {
+    margin-left: 20px;
+  }
+
+  .header-shop img {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header-shop header {
+    flex-direction: column;
+  }
+
+  .header-shop-info {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .header-shop img {
+    margin: 0 auto;
+    height: 70%;
+    width: 40%;
+  }
+
+  .header-shop-info h1 {
+    font-size: 5.5rem;
+    margin-top: 20px;
+  }
+
+  .header-shop-info p {
+    font-size: 1.9rem;
+    margin-bottom: 0;
+    margin-bottom: 20px;
+  }
+
+  .shop-btn {
+    display: none;
+  }
+
+  .header-shop {
+    padding-bottom: 60px;
+  }
+}
+
 /*Cart-Btn*/
 .cart-btn {
   position: fixed;
@@ -21,7 +125,7 @@ body:not(nav) {
   width: 60px;
   background-color: #ff9964;
   color: white;
-  top: 120px;
+  top: 130px;
   right: 40px;
   border-radius: 50%;
   text-decoration: none;
@@ -34,14 +138,14 @@ body:not(nav) {
 }
 
 /*Webshop*/
-.shop {
+#shop {
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 70px;
   margin-top: 50px;
 }
 
-.shop h2 {
+#shop h2 {
   font-size: 3.5rem;
   font-weight: bold;
   font-family: "Cormorant Garamond", serif;
