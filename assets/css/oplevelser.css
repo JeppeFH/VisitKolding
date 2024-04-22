@@ -10,10 +10,12 @@ html {
 /*oplevelser*/
 .oplevelser {
   display: flex;
+  max-width: 1200px;
   margin: 0 auto;
+  gap: 5px;
 }
 .oplevelser img {
-  width: 720px;
+  width: 600px;
   height: auto;
 }
 .oplevelser-title {
