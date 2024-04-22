@@ -80,6 +80,15 @@ body:not(nav) {
   }
 }
 
+@media screen and (max-width: 970px) {
+  .header-shop-info p {
+    font-size: 2.1rem;
+  }
+  .header-shop-info h1 {
+    font-size: 8rem;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .header-shop header {
     flex-direction: column;

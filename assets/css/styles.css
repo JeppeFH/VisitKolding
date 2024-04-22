@@ -344,6 +344,11 @@ header {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
+.nyflytter-articles img:hover {
+  transform: translateY(-5px);
+  transition: all 300ms ease-out;
+}
+
 .nyflytter-articles article h3 {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -411,6 +416,52 @@ header {
   .nyflytter-articles article:last-child {
     margin-bottom: 60px;
   }
+}
+
+/*Design skolen*/
+.designskolen {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.designskolen img {
+  width: 100%;
+  height: 100%;
+}
+
+.design-txt-container {
+  font-size: 1.6rem;
+  padding: 1.2%;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: 10px 10px #ff9a64;
+  bottom: 150px;
+  left: 3%;
+  width: 450px;
+  position: relative;
+  color: black;
+  font-weight: 500;
+}
+
+.design-txt-container h2 {
+  margin-bottom: 5px;
+}
+
+.design-small-img {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  bottom: 110px;
+}
+
+.design-small-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.design-small-img img:first-child {
+  border: 3.5px solid #ff9a64;
 }
 
 /*Footer*/
@@ -496,4 +547,10 @@ header {
   color: rgb(138, 132, 132);
   font-size: 1.3rem;
   padding: 20px;
+}
+
+.footer-3 a {
+  text-decoration: none;
+  color: rgb(138, 132, 132);
+  font-size: 1.3rem;
 }
