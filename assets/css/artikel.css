@@ -56,6 +56,11 @@ body:not(nav) {
   line-height: 1.7;
 }
 
+.article-page-header p:nth-child(4) {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
 .header-info-container h1 {
   font-size: 4.5rem;
   font-weight: bolder;
@@ -99,6 +104,10 @@ body:not(nav) {
     font-size: 1.4rem;
   }
 
+  .article-page-header p:nth-child(4) {
+    font-size: 1.2rem;
+  }
+
   .header-info-container h1 {
     font-size: 3.5rem;
     text-align: center;
@@ -110,7 +119,7 @@ body:not(nav) {
   display: flex;
   margin: 0 auto;
   gap: 30px;
-  margin-top: 100px;
+  margin-top: 110px;
   margin-bottom: 50px;
   justify-content: center;
 }
@@ -129,7 +138,7 @@ body:not(nav) {
 
 @media screen and (max-width: 768px) {
   .printandshare {
-    margin-top: 80px;
+    margin-top: 110px;
   }
 
   .printandshare i {
@@ -137,4 +146,319 @@ body:not(nav) {
   }
 }
 
-/*Artikel indhold*/
+/*Artikel lejebolig tekst*/
+.artikel-lejebolig-tekst {
+  max-width: 800px;
+  text-align: start;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.artikel-lejebolig-tekst p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 950px) {
+  .artikel-lejebolig-tekst p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .artikel-lejebolig-tekst p {
+    font-size: 1.4rem;
+  }
+
+  .artikel-lejebolig-tekst {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/*Artikel lejeboliger - sektion 1*/
+.artikel-content-lejebolig {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 60px;
+  gap: 20px;
+}
+
+.artikel-content-lejebolig div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.artikel-lejebolig-container article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.artikel-lejebolig-container img {
+  border-radius: 10px;
+  width: 90%;
+  height: 90%;
+  margin-bottom: 5px;
+}
+
+.artikel-lejebolig-container img:hover {
+  transform: translateY(-2px);
+  transition: all 300ms ease-out;
+  cursor: pointer;
+}
+
+.artikel-content-lejebolig img:last-child {
+  width: 50%;
+  height: 50%;
+}
+
+.artikel-content-lejebolig p {
+  font-size: 1.3rem;
+}
+
+.artikel-content-lejebolig h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.artikel-content-lejebolig h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.artikel-content-lejebolig h5 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1249px) {
+  .artikel-content-lejebolig img:last-child {
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .artikel-content-lejebolig {
+    flex-direction: column;
+  }
+
+  .artikel-content-lejebolig img:last-child {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+  }
+}
+
+/*Artikel lejeboliger - sektion 2*/
+.artikel-content-lejebolig-2 {
+  max-width: 1200px;
+  padding-bottom: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.artikel-content-lejebolig-2 article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.artikel-content-lejebolig-2 img {
+  border-radius: 10px;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.artikel-content-lejebolig-2 img:hover {
+  transform: translateY(-2px);
+  transition: all 300ms ease-out;
+  cursor: pointer;
+}
+
+.artikel-content-lejebolig-2 p {
+  font-size: 1.3rem;
+}
+
+.artikel-content-lejebolig-2 h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.artikel-content-lejebolig-2 h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.artikel-content-lejebolig-2 h5 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1050px) {
+  .artikel-content-lejebolig-2 {
+    margin-top: -60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .artikel-content-lejebolig-2 {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0;
+  }
+}
+
+/*Boligportal*/
+.boligportal {
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  background-color: #ff9964;
+  padding: 25px;
+  display: flex;
+  gap: 200px;
+  margin-bottom: 80px;
+}
+
+.boligportal img {
+  width: 30%;
+  height: 30%;
+  margin-left: auto;
+}
+
+.boligportal div {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.boligportal p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.boligportal-btn {
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 10px;
+  color: #ff9964;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.boligportal-btn:hover {
+  color: #f49561;
+  cursor: pointer;
+  background-color: rgb(245, 245, 245);
+}
+
+@media screen and (max-width: 768px) {
+  .boligportal p {
+    font-size: 1.5rem;
+  }
+
+  .boligportal-btn {
+    font-size: 1.4rem;
+  }
+
+  .boligportal {
+    gap: 150px;
+  }
+}
+
+/*Læs også*/
+.readmore-articles {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  gap: 20px;
+  margin-bottom: 100px;
+}
+
+.readmore-articles div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.readmore-articles div a {
+  align-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.readmore-articles article {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(249, 249, 249);
+}
+
+.readmore-articles img {
+  height: 100px;
+  width: 100px;
+  margin-left: 300px;
+}
+
+.readmore-articles h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.readmore-articles h3:hover {
+  color: #f49561;
+}
+
+.readmore-articles h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1116px) {
+  .readmore-articles div {
+  }
+
+  .readmore-articles article {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .readmore-articles img {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .readmore-articles h3 {
+    font-size: 1.4rem;
+  }
+
+  .readmore-articles h2 {
+    font-size: 2.2rem;
+  }
+}
