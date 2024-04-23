@@ -104,6 +104,10 @@ html {
 .img-2 {
   background-image: url(/assets/img/shopping3.jpg);
 }
+.article-container-2 {
+  display: flex;
+}
+
 .natteliv {
   width: 100%;
   display: flex;
@@ -120,16 +124,11 @@ html {
 }
 
 .natteliv-simple img {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: center;
-  background-size: 120%;
+  width: 200px;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
   transition: all 250ms ease-in-out;
-}
-.natteliv-simple img:hover {
-  background-size: 120%;
 }
 
 .natteliv-simple h3 {
