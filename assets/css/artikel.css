@@ -216,6 +216,7 @@ body:not(nav) {
 .artikel-content-lejebolig img:last-child {
   width: 50%;
   height: 50%;
+  cursor: pointer;
 }
 
 .artikel-content-lejebolig p {

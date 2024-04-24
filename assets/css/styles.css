@@ -332,7 +332,7 @@ header {
   }
 }
 
-/*Nyflytter blog*/
+/*Nyflytter artikler*/
 .nyflytter-sectionblog {
   width: 100%;
   background-color: rgb(241, 236, 231);
@@ -519,6 +519,7 @@ header {
 
   .design-small-img {
     bottom: 50px;
+    margin-bottom: 10px;
   }
 }
 
@@ -531,10 +532,32 @@ header {
 
   .design-small-img {
     bottom: 45px;
+    margin-bottom: 15px;
   }
 }
 
 /*Pop up designskolen*/
+.popup-event {
+  max-width: 1200px;
+  height: 125px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-image: url(/assets/img/kunst2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: whitesmoke;
+  position: relative;
+  bottom: 70px;
+}
+
+.popup-event h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 auto;
+  color: white;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -548,21 +571,13 @@ header {
   align-items: center;
 }
 
-.popup-event {
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: center;
-  padding: 30px;
-  background-color: whitesmoke;
-  margin-bottom: 60px;
-}
-
 #showImageButton {
   background-color: #ff9964;
   padding: 10px;
   font-size: 1.7rem;
   border: solid #ff9964;
   text-align: center;
+  margin: 0 auto;
 }
 
 #showImageButton:hover {
@@ -591,6 +606,37 @@ header {
   display: none;
 }
 
+@media screen and (max-width: 1065px) {
+  .popup-event {
+    height: 110px;
+    bottom: 30px;
+  }
+
+  .popup-event h2 {
+    font-size: 1.7rem;
+  }
+
+  #showImageButton {
+    padding: 9px;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .popup-event {
+    height: 95px;
+  }
+
+  .popup-event h2 {
+    font-size: 1.6rem;
+  }
+
+  #showImageButton {
+    padding: 8px;
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #imageContainer img {
     transform: scale(0.9);
@@ -608,6 +654,119 @@ header {
   #closeButton {
     font-size: 4rem;
   }
+
+  .popup-event {
+    height: 85px;
+    bottom: 30px;
+  }
+
+  .popup-event h2 {
+    font-size: 1.4rem;
+  }
+
+  #showImageButton {
+    padding: 7px;
+    font-size: 1.3rem;
+  }
+}
+
+/*Hvornår vil du besøge Kolding?*/
+.årstid {
+  width: 100%;
+  background-color: rgb(241, 236, 231);
+  padding: 50px;
+  margin-bottom: 70px;
+}
+
+.årstid h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.årstid p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.årstid p:nth-child(3) {
+  margin-bottom: 30px;
+}
+
+.årstid-container {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.card {
+  width: 260px;
+  height: 359px;
+
+  margin: 0 auto;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.intro {
+  height: 200px;
+  width: 260px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  bottom: 363px;
+  color: white;
+}
+
+.intro img {
+  height: 50px;
+  width: 50px;
+  margin: 40px 0 5px 100px;
+  color: #ff9964;
+}
+
+.intro h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ff9964;
+}
+
+.intro p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+}
+
+.intro-arrow i {
+  font-size: 3rem;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .intro {
+  height: 359px;
+  background: rgb(0, 88, 122, 0.7);
+  transition: all 300ms ease-in-out;
+}
+
+.card:hover p {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*Footer*/
