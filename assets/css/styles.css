@@ -694,14 +694,11 @@ header {
   text-align: center;
 }
 
-.årstid p:nth-child(3) {
-  margin-bottom: 30px;
-}
-
 .årstid-container {
   max-width: 1200px;
   display: flex;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 .card {
@@ -731,15 +728,14 @@ header {
 .intro img {
   height: 50px;
   width: 50px;
-  margin: 40px 0 5px 100px;
-  color: #ff9964;
+  margin: 60px 0 5px 100px;
 }
 
 .intro h3 {
   font-size: 2rem;
   margin-bottom: 10px;
   text-align: center;
-  color: #ff9964;
+  color: white;
 }
 
 .intro p {
@@ -752,6 +748,9 @@ header {
 
 .intro-arrow i {
   font-size: 3rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
 }
 
 .card:hover {
@@ -764,9 +763,64 @@ header {
   transition: all 300ms ease-in-out;
 }
 
+.card:hover h3,
 .card:hover p {
   opacity: 1;
   visibility: visible;
+}
+
+.intro i:hover {
+  color: #ff9a64;
+}
+
+@media screen and (max-width: 1107px) {
+  .årstid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 20px;
+  }
+
+  .intro img {
+    margin: 60px 0 5px 128px;
+  }
+
+  .card {
+    width: 320px;
+    height: 320px;
+
+    margin: 0 auto;
+  }
+
+  .intro img {
+  }
+
+  .intro {
+    width: 320px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    bottom: 324px;
+    color: white;
+  }
+
+  .card:hover .intro {
+    height: 320px;
+    background: rgb(0, 88, 122, 0.7);
+    transition: all 300ms ease-in-out;
+  }
+  .intro p {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .årstid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 /*Footer*/
