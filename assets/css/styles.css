@@ -851,9 +851,6 @@ header {
     margin: 0 auto;
   }
 
-  .intro img {
-  }
-
   .intro {
     width: 320px;
     padding: 6px;
@@ -875,6 +872,17 @@ header {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .årstid h2 {
+    font-size: 2rem;
+  }
+
+  .årstid p:nth-child(2),
+  .årstid p:nth-child(3) {
+    font-size: 1.4rem;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .årstid-container {
     display: flex;
@@ -883,12 +891,12 @@ header {
   }
 
   .årstid h2 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
-  .årstid p:nth-child(1),
-  .årstid p:nth-child(2) {
-    font-size: ;
+  .årstid p:nth-child(2),
+  .årstid p:nth-child(3) {
+    font-size: 1.2rem;
   }
 }
 
