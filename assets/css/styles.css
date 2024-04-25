@@ -78,8 +78,8 @@ nav img {
   display: none;
 }
 
-#toggle-nav {
-  z-index: 9999;
+nav label {
+  z-index: 999;
 }
 
 /*Nav Responsiv*/
@@ -103,6 +103,14 @@ nav img {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+  }
+
+  nav ul li {
+    margin-top: 10px;
+  }
+
+  nav ul li:nth-child(5) {
+    margin-bottom: 40px;
   }
 
   nav img {
@@ -138,6 +146,58 @@ nav img {
 #toggle-nav-btn-close {
   font-size: 3rem;
   color: black;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+  }
+
+  .nav-links {
+    height: 200px;
+  }
+
+  #toggle-nav:checked ~ .nav-links {
+    display: inline-block;
+    top: -200px;
+  }
+
+  nav ul li {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  nav ul li:nth-child(1) {
+    position: absolute;
+    top: 50px;
+  }
+
+  nav ul li:nth-child(2) {
+    position: absolute;
+    top: 80px;
+  }
+
+  nav ul li:nth-child(3) {
+    position: absolute;
+    top: 110px;
+  }
+
+  nav ul li:nth-child(4) {
+    position: absolute;
+    top: 140px;
+  }
+
+  nav ul li:nth-child(5) {
+    position: absolute;
+    top: 170px;
+  }
+
+  nav ul li:nth-child(6) {
+    position: absolute;
+    top: 10px;
+  }
 }
 
 /*Header Blog*/
@@ -820,6 +880,15 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .årstid h2 {
+    font-size: 2.2rem;
+  }
+
+  .årstid p:nth-child(1),
+  .årstid p:nth-child(2) {
+    font-size: ;
   }
 }
 
