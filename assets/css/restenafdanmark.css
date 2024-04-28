@@ -11,3 +11,136 @@ html {
 body:not(nav) {
   font-family: "Poppins", sans-serif;
 }
+
+/*header*/
+.header-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-bottom: 40px;
+}
+
+.header-info img {
+  margin-right: 5px;
+  width: 100%;
+}
+
+.header-info-container {
+  background-color: white;
+  position: relative;
+  bottom: 70%;
+  padding: 30px 0;
+  width: 600px;
+  margin: 0 auto;
+  left: 50%; /*!!!!!Problem ved responsive!!!!*/
+}
+
+.header-info-container div {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.header-info-container p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.header-info-container h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1170px) {
+  .header-info {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .header-info {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .header-info {
+    margin-bottom: -30px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .header-info {
+    margin-bottom: -50px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header-info {
+    margin-bottom: -90px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header-info {
+    margin-bottom: -120px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header-info img:nth-child(2) {
+    display: none;
+  }
+
+  .header-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .header-info img {
+    height: 590px;
+  }
+
+  .header-info-container {
+    bottom: 90px;
+    padding: 18px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .header-info-container h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+  }
+
+  .header-info-container p {
+    font-size: 0.9rem;
+  }
+}
+
+/*Nyttig information*/
+.nyttig-information {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nyttig-information h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.nyttig-information p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.7;
+  margin-bottom: 70px;
+}

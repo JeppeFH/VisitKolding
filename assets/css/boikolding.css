@@ -11,3 +11,240 @@ html {
 body:not(nav) {
   font-family: "Poppins", sans-serif;
 }
+
+/*header*/
+.header-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-bottom: 40px;
+}
+
+.header-info img {
+  margin-right: 5px;
+  width: 100%;
+}
+
+.header-info-container {
+  background-color: white;
+  position: relative;
+  bottom: 70%;
+  padding: 30px 0;
+  width: 600px;
+  margin: 0 auto;
+  left: 50%; /*!!!!!Problem ved responsive!!!!*/
+}
+
+.header-info-container div {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.header-info-container p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.header-info-container h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1170px) {
+  .header-info {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .header-info {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .header-info {
+    margin-bottom: -30px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .header-info {
+    margin-bottom: -50px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header-info {
+    margin-bottom: -90px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header-info {
+    margin-bottom: -120px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header-info img:nth-child(2) {
+    display: none;
+  }
+
+  .header-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .header-info img {
+    height: 590px;
+  }
+
+  .header-info-container {
+    bottom: 90px;
+    padding: 18px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .header-info-container h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+  }
+
+  .header-info-container p {
+    font-size: 0.9rem;
+  }
+}
+
+/*Nyttig information*/
+.nyttig-information {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nyttig-information h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.nyttig-information p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.7;
+  margin-bottom: 70px;
+}
+
+/*At bo i Kolding*/
+.bo-i-kolding {
+  width: 100%;
+  background-color: whitesmoke;
+  padding-bottom: 60px;
+}
+
+.bo-i-kolding-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  height: auto;
+}
+
+.bo-i-kolding-container h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+.bo-i-kolding-container p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.bo-i-kolding-container div {
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.bo-i-kolding-container article {
+  width: 250px;
+  height: 250px;
+}
+
+.bo-i-kolding-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.bo-i-kolding-container article a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  position: relative;
+  top: 110px;
+}
+
+.bo-i-kolding-container article figure {
+  box-sizing: border-box;
+  position: relative;
+  bottom: 248px;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.bo-i-kolding-container article:hover figure {
+  height: 240px;
+  background-color: rgb(50, 50, 50, 0.5);
+  transition: all 300ms ease-in-out;
+}
+
+.bo-i-kolding-container a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 786px) {
+  .bo-i-kolding p {
+    padding: 0 125px 0 125px;
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bo-i-kolding h2 {
+    font-size: 2.5rem;
+  }
+
+  .bo-i-kolding p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .bo-i-kolding h2 {
+    font-size: 2.1rem;
+  }
+
+  .bo-i-kolding p {
+    font-size: 1.4rem;
+    padding: 0 85px 0 85px;
+  }
+}
