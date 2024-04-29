@@ -50,7 +50,7 @@ nav ul li:nth-child(1) {
   margin-left: auto;
 }
 
-nav ul li:nth-child(6) {
+nav ul li:nth-child(7) {
   margin-left: auto;
   margin-right: 20px;
 }
@@ -83,7 +83,7 @@ nav label {
 }
 
 /*Nav Responsiv*/
-@media screen and (max-width: 1043px) {
+@media screen and (max-width: 1054px) {
   .nav-links {
     position: absolute;
     opacity: 0;
