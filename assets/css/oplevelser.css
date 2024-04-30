@@ -38,8 +38,6 @@ html {
 
 .oplevelser-nav {
   background-color: rgb(243, 237, 229);
-  max-width: 1200px;
-  height: 1000px;
   margin: 0 auto;
   margin-bottom: 80px;
 }
@@ -57,14 +55,13 @@ html {
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: 90%;
   gap: 20px;
+  margin-bottom: 50px;
 }
 
 .article-container article {
   width: 50%;
-  height: 100%;
 }
 
 .img-1,
@@ -75,13 +72,14 @@ html {
   background-position: center;
   background-size: 120%;
   width: 100%;
-  height: 100%;
+  height: 400px;
+
   transition: all 250ms ease-in-out;
 }
 
 .img-1:hover,
 .img-2:hover {
-  background-size: 150%;
+  background-size: 130%;
 }
 .img-1 a,
 .img-2 a {
@@ -90,7 +88,7 @@ html {
   text-decoration: none;
   background-color: white;
   box-shadow: 10px 10px #ff9a64;
-  top: 70%;
+  top: 89%;
   left: 3%;
   position: relative;
   color: black;
@@ -118,7 +116,6 @@ html {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  height: 350px;
   width: 400px;
   margin-bottom: 70px;
 }
@@ -157,6 +154,7 @@ html {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: start;
+  gap: 10px;
 }
 
 .geografisk-have {
@@ -169,14 +167,12 @@ html {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  height: 350px;
   width: 400px;
   margin-bottom: 70px;
 }
 
 .geografisk-have-simple img {
   width: 50%;
-  height: 50%;
 }
 .geografisk-have-simple img:hover {
   background-size: 120%;
@@ -188,7 +184,7 @@ html {
   text-decoration: none;
   background-color: white;
   box-shadow: 10px 10px #ff9a64;
-  top: 70%;
+  top: 89%;
   left: 3%;
   position: relative;
   color: black;
@@ -219,14 +215,12 @@ html {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  height: 350px;
   width: 400px;
   margin-bottom: 70px;
 }
 
 .havnen-simple img {
   width: 50%;
-  height: 50%;
 }
 .havnen-simple img:hover {
   background-size: 100%;
@@ -241,7 +235,7 @@ html {
   left: 3%;
   position: relative;
   color: black;
-  font-weight: 500;
+  font-weight: 500px;
 }
 
 .havnen-simple h3:hover {
