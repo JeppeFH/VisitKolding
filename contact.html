@@ -105,9 +105,24 @@
       <div class="contact-in">
         <h1>Send besked</h1>
         <form>
-          <input type="text" placeholder="Navn" class="contact-in-input" />
-          <input type="text" placeholder="Email" class="contact-in-input" />
-          <input type="text" placeholder="Emne" class="contact-in-input" />
+          <input
+            type="text"
+            placeholder="Navn"
+            minlength="2"
+            class="contact-in-input"
+          />
+          <input
+            type="text"
+            placeholder="Email"
+            maxlength="30"
+            class="contact-in-input"
+          />
+          <input
+            type="text"
+            placeholder="Emne"
+            maxlength="60"
+            class="contact-in-input"
+          />
           <input type="file" placeholder="Fil" id="upload-box" />
           <label class="contact-label" for="upload-box"
             ><i class="fa-solid fa-upload"></i> Vælg fil</label
