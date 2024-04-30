@@ -39,7 +39,7 @@ html {
 .oplevelser-nav {
   background-color: rgb(243, 237, 229);
   margin: 0 auto;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .oplevelser-nav h2 {
@@ -104,12 +104,25 @@ html {
 }
 .article-container-2 {
   display: flex;
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+  gap: 30px;
 }
 
-.natteliv {
+.natteliv,
+.geografisk-have,
+.havnen {
+  width: 100%;
+}
+
+.natteliv-simple,
+.geografisk-have-simple,
+.havnen-simple {
   width: 100%;
   display: flex;
   gap: 30px;
+  flex-direction: column;
 }
 
 .natteliv-simple article {
@@ -120,22 +133,26 @@ html {
   margin-bottom: 70px;
 }
 
-.natteliv-simple img {
-  width: 200px;
+.natteliv-simple img,
+.geografisk-have-simple img,
+.havnen-simple img {
+  width: 100%;
   height: auto;
   aspect-ratio: 1/1;
   object-fit: cover;
   transition: all 250ms ease-in-out;
 }
 
-.natteliv-simple h3 {
+.natteliv-simple h3,
+.geografisk-have-simple h3,
+.havnen-simple h3 {
   font-size: 16px;
   padding: 1.2%;
   text-decoration: none;
   background-color: white;
   box-shadow: 10px 10px #ff9a64;
   top: 70%;
-  left: 3%;
+  left: 0;
   position: relative;
   color: black;
   font-weight: 500;
@@ -149,18 +166,25 @@ html {
   text-decoration: none;
 }
 
+.natteliv-simple a:first-child,
+.geografisk-have-simple a:first-child,
+.havnen-simple a:first-child {
+  position: relative;
+  overflow: hidden;
+}
+
+.natteliv-simple a:first-child:hover img,
+.geografisk-have-simple a:first-child:hover img,
+.havnen-simple a:first-child:hover img {
+  transform: scale(1.1);
+}
+
 .natteliv-simple p {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5rem;
   text-align: start;
   gap: 10px;
-}
-
-.geografisk-have {
-  width: 100%;
-  display: flex;
-  gap: 30px;
 }
 
 .geografisk-have-simple article {
@@ -171,24 +195,8 @@ html {
   margin-bottom: 70px;
 }
 
-.geografisk-have-simple img {
-  width: 50%;
-}
 .geografisk-have-simple img:hover {
   background-size: 120%;
-}
-
-.geografisk-have-simple h3 {
-  font-size: 16px;
-  padding: 1.2%;
-  text-decoration: none;
-  background-color: white;
-  box-shadow: 10px 10px #ff9a64;
-  top: 89%;
-  left: 3%;
-  position: relative;
-  color: black;
-  font-weight: 500;
 }
 
 .geografisk-have-simple h3:hover {
@@ -205,11 +213,6 @@ html {
   line-height: 1.5rem;
   text-align: start;
 }
-.havnen {
-  width: 100%;
-  display: flex;
-  gap: 30px;
-}
 
 .havnen-simple article {
   display: flex;
@@ -219,23 +222,8 @@ html {
   margin-bottom: 70px;
 }
 
-.havnen-simple img {
-  width: 50%;
-}
 .havnen-simple img:hover {
-  background-size: 100%;
-}
-.havnen-simple h3 {
-  font-size: 16px;
-  padding: 1.2%;
-  text-decoration: none;
-  background-color: white;
-  box-shadow: 10px 10px #ff9a64;
-  top: 70%;
-  left: 3%;
-  position: relative;
-  color: black;
-  font-weight: 500px;
+  background-size: 130%;
 }
 
 .havnen-simple h3:hover {
