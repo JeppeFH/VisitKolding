@@ -12,4 +12,336 @@ body:not(nav) {
   font-family: "Poppins", sans-serif;
 }
 
+/*header*/
+.header-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-bottom: 40px;
+}
+
+.header-info img {
+  margin-right: 5px;
+  width: 100%;
+}
+
+.header-info-container {
+  background-color: white;
+  position: relative;
+  bottom: 70%;
+  padding: 30px 0;
+  width: 600px;
+  margin: 0 auto;
+  grid-column-start: span 2;
+}
+
+.header-info-container div {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.header-info-container p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.header-info-container h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1170px) {
+  .header-info {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .header-info {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .header-info {
+    margin-bottom: -30px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .header-info {
+    margin-bottom: -50px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header-info {
+    margin-bottom: -90px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header-info {
+    margin-bottom: -120px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header-info img:nth-child(2) {
+    display: none;
+  }
+
+  .header-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .header-info img {
+    height: 590px;
+  }
+
+  .header-info-container {
+    bottom: 90px;
+    padding: 18px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .header-info-container h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+  }
+
+  .header-info-container p {
+    font-size: 0.9rem;
+  }
+}
+
+/*Nyttig information*/
+.nyttig-information {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nyttig-information h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.nyttig-information p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.7;
+  margin-bottom: 70px;
+}
+
 /*Kontakt form*/
+.contact-wrap {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+.contact-in {
+  padding: 40px 30px;
+}
+
+.contact-in:nth-child(1) {
+  flex: 30%;
+  background: url(/assets/img/havn_træskib.jpg);
+  background-repeat: no-repeat;
+}
+
+.contact-in:nth-child(2) {
+  flex: 45%;
+  background-color: #ff9a64;
+}
+
+.contact-in:nth-child(3) {
+  flex: 25%;
+  padding: 0;
+}
+
+.contact-in h1 {
+  font-size: 2.4rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.contact-in h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.contact-in h2 i {
+  font-size: 1.6rem;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background: #f5f5f5;
+  color: black;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.contact-in ul {
+  padding: 0;
+  margin: 0;
+}
+
+.contact-in ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.contact-in ul li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background: white;
+  border-radius: 50px;
+}
+
+.contact-in ul li a i {
+  font-size: 2rem;
+  line-height: 30px;
+  color: black;
+}
+
+.contact-in p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.contact-in form {
+  width: 100%;
+  height: auto;
+}
+
+.contact-in input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  outline: none;
+  padding-left: 5px;
+  background: transparent;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.contact-label {
+  display: block;
+  color: white;
+  background-color: #ff9a64;
+  border: 1px solid white;
+  text-align: center;
+  width: 100%;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+Label:hover {
+  background-color: #f2915c;
+}
+
+.contact-in-input::placeholder {
+  color: white;
+}
+
+.contact-in-textarea {
+  width: 100%;
+  height: 140px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  outline: none;
+  padding-top: 5px;
+  padding-left: 5px;
+  background: transparent;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.contact-in-textarea::placeholder {
+  color: white;
+}
+
+.contact-in-btn {
+  width: 100%;
+  height: 40px;
+  border: 1px solid white;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.contact-in-btn:hover {
+  background-color: #f2915c;
+}
+
+.contact-in iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-in:nth-child(1) {
+    flex: 50%;
+  }
+
+  .contact-in:nth-child(2) {
+    flex: 50%;
+  }
+
+  .contact-in:nth-child(3) {
+    flex: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contact-in:nth-child(1) {
+    flex: 50%;
+  }
+
+  .contact-in:nth-child(2) {
+    flex: 50%;
+  }
+
+  .contact-in:nth-child(3) {
+    flex: 100%;
+  }
+}
