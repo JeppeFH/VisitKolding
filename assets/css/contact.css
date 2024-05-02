@@ -266,9 +266,8 @@ input[type="file"] {
   height: 25px;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 20px;
-  letter-spacing: 0.5px;
 }
 
 Label:hover {
