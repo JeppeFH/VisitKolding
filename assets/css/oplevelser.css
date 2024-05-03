@@ -164,6 +164,7 @@ html {
   position: relative;
   color: black;
   font-weight: 500;
+  width: fit-content;
 }
 
 .natteliv-simple h3:hover,
@@ -196,7 +197,6 @@ html {
 .havnen-simple p {
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 1.5rem;
   text-align: start;
   gap: 10px;
 }
