@@ -161,7 +161,7 @@ body:not(nav) {
 
 .contact-in:nth-child(1) {
   flex: 30%;
-  background: url(/assets/img/havn_træskib.jpg);
+  background: url(/assets/img/havn_traeskib.jpg);
   background-repeat: no-repeat;
 }
 

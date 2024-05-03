@@ -177,7 +177,7 @@ body:not(nav) {
 .article-img-2,
 .article-img-3,
 .article-img-4 {
-  background-image: url(/assets/img/banegård3.JPG);
+  background-image: url(/assets/img/banegaard3.JPG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 120%;
@@ -187,7 +187,7 @@ body:not(nav) {
 }
 
 .article-img-2 {
-  background-image: url(/assets/img/parkeringskælder2.jpg);
+  background-image: url(/assets/img/parkeringskaelder2.jpg);
 }
 
 .article-img-3 {
