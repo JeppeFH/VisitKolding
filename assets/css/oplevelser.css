@@ -182,7 +182,6 @@ html {
   background-image: url(/assets/img/danskmoelle2.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-position: center;
   background-size: 120%;
   width: 100%;
   height: 400px;
@@ -207,6 +206,7 @@ html {
   color: black;
   font-weight: 500;
 }
+
 .img-1 a:hover,
 .img-2 a:hover {
   color: rgb(103, 103, 103);
@@ -345,5 +345,61 @@ html {
 @media screen and (max-width: 768px) {
   .article-container {
     flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 90%;
+  }
+
+  .img-1,
+  .img-2 {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .img-1 a,
+  .img-2 a {
+    font-size: 16px;
+    padding: 1.1%;
+    top: 85%;
+    left: 3%;
+  }
+
+  .oplevelser-nav h2 {
+    font-size: 30px;
+  }
+
+  .article-container article {
+    width: 100%;
+  }
+
+  /*article container 2*/
+  .article-container-2 {
+    flex-direction: column;
+    max-width: 72%;
+    gap: 0;
+  }
+
+  .natteliv-simple h3,
+  .geografisk-have-simple h3,
+  .havnen-simple h3 {
+    font-size: 16px;
+    padding: 1.2%;
+    bottom: 62px;
+    left: 17px;
+  }
+
+  .natteliv-simple p,
+  .geografisk-have-simple p,
+  .havnen-simple p {
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 33px;
+  }
+
+  .natteliv-simple,
+  .geografisk-have-simple,
+  .havnen-simple {
+    gap: 0;
   }
 }
