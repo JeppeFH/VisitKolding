@@ -7,148 +7,35 @@
 html {
   font-size: 62.5%;
 }
-
 /*oplevelser*/
-/*header*/
-.header-info {
+.oplevelser {
+  display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  margin-bottom: 40px;
+  gap: 5px;
 }
-
-.header-info img {
-  margin-right: 5px;
-  width: 100%;
-}
-
-.header-info-container {
-  background-color: white;
-  position: relative;
-  bottom: 70%;
-  padding: 30px 0;
+.oplevelser img {
   width: 600px;
+  height: auto;
+}
+.oplevelser-title {
+  width: 800px;
+  background-color: #ffff;
+  position: relative;
+  top: -50px;
   margin: 0 auto;
-  grid-column-start: span 2;
+  border-radius: 10px;
 }
-
-.header-info-container div {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
-.header-info-container p {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.header-info-container h1 {
-  font-size: 4rem;
-  font-weight: bolder;
-  display: flex;
-  justify-content: center;
-}
-
-@media screen and (max-width: 1170px) {
-  .header-info {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 1130px) {
-  .header-info {
-    margin-bottom: 10px;
-  }
-}
-
-@media screen and (max-width: 1070px) {
-  .header-info {
-    margin-bottom: -30px;
-  }
-}
-
-@media screen and (max-width: 1020px) {
-  .header-info {
-    margin-bottom: -50px;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .header-info {
-    margin-bottom: -90px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .header-info {
-    margin-bottom: -120px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .header-info img:nth-child(2) {
-    display: none;
-  }
-
-  .header-info {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 40px;
-  }
-
-  .header-info img {
-    height: 590px;
-  }
-
-  .header-info-container {
-    bottom: 90px;
-    padding: 18px;
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .header-info-container h1 {
-    font-size: 3rem;
-    margin-bottom: 5px;
-  }
-
-  .header-info-container p {
-    font-size: 0.9rem;
-  }
-}
-
-/*Nyttig information*/
-.nyttig-information {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.nyttig-information h2 {
-  font-weight: 700;
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.nyttig-information p {
-  font-weight: 500;
-  font-size: 1.6rem;
-  text-align: center;
-  line-height: 1.7;
-  margin-bottom: 70px;
-}
-
-.nyttig-information h2 {
-  font-size: 3rem;
+.oplevelser-title h2 {
+  font-size: 48px;
   text-align: center;
   align-items: center;
 }
+.oplevelser-title p {
+  font-size: 18px;
+  text-align: center;
+}
 
-/*Oplevelser nav*/
 .oplevelser-nav {
   background-color: rgb(243, 237, 229);
   margin: 0 auto;
@@ -179,13 +66,13 @@ html {
 
 .img-1,
 .img-2 {
-  background-image: url(/assets/img/danskmoelle2.jpg);
+  background-image: url(/assets/img/danskmølle2.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-position: center;
   background-size: 120%;
   width: 100%;
   height: 400px;
-
   transition: all 250ms ease-in-out;
 }
 
@@ -206,7 +93,6 @@ html {
   color: black;
   font-weight: 500;
 }
-
 .img-1 a:hover,
 .img-2 a:hover {
   color: rgb(103, 103, 103);
@@ -272,8 +158,8 @@ html {
   text-decoration: none;
   background-color: white;
   box-shadow: 10px 10px #ff9a64;
-  bottom: 89px;
-  left: 15px;
+  top: 70%;
+  left: 0;
   position: relative;
   color: black;
   font-weight: 500;
@@ -311,109 +197,5 @@ html {
   font-size: 1.5rem;
   font-weight: 400;
   text-align: start;
-  position: relative;
-  bottom: 68px;
-}
-
-/*Responsive*/
-@media screen and (max-width: 1022px) {
-  .img-1 a,
-  .img-2 a {
-    padding: 1.1%;
-    top: 82%;
-  }
-
-  .natteliv-simple h3,
-  .geografisk-have-simple h3,
-  .havnen-simple h3 {
-    padding: 1.1%;
-    bottom: 78px;
-  }
-}
-
-@media screen and (max-width: 868px) {
-  .img-1 a,
-  .img-2 a {
-    font-size: 14px;
-    padding: 1%;
-    top: 80%;
-    left: 3%;
-  }
-
-  .natteliv-simple h3,
-  .geografisk-have-simple h3,
-  .havnen-simple h3 {
-    font-size: 14px;
-    padding: 1%;
-  }
-}
-
-@media screen and (max-width: 810px) {
-  .img-1 a,
-  .img-2 a {
-    top: 77%;
-    left: 3%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .article-container {
-    flex-direction: column;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    width: 90%;
-  }
-
-  .img-1,
-  .img-2 {
-    width: 80%;
-    height: 400px;
-    margin: 0 auto;
-  }
-
-  .img-1 a,
-  .img-2 a {
-    font-size: 16px;
-    padding: 1.1%;
-    top: 85%;
-    left: 3%;
-  }
-
-  .oplevelser-nav h2 {
-    font-size: 30px;
-  }
-
-  .article-container article {
-    width: 100%;
-  }
-
-  /*article container 2*/
-  .article-container-2 {
-    flex-direction: column;
-    max-width: 72%;
-    gap: 0;
-  }
-
-  .natteliv-simple h3,
-  .geografisk-have-simple h3,
-  .havnen-simple h3 {
-    font-size: 16px;
-    padding: 1.2%;
-    bottom: 62px;
-    left: 17px;
-  }
-
-  .natteliv-simple p,
-  .geografisk-have-simple p,
-  .havnen-simple p {
-    font-size: 1.5rem;
-    position: relative;
-    bottom: 33px;
-  }
-
-  .natteliv-simple,
-  .geografisk-have-simple,
-  .havnen-simple {
-    gap: 0;
-  }
+  gap: 10px;
 }
