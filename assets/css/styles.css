@@ -220,10 +220,10 @@ header {
   background-image: url(/assets/img/torv1.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 150%;
+  background-size: 180%;
   width: 100%;
   height: 100%;
-  transition: all 250ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .headline-img-1:hover {
@@ -236,7 +236,7 @@ header {
   text-decoration: none;
   background-color: white;
   box-shadow: 10px 10px #ff9a64;
-  top: 88%;
+  top: 90%;
   left: 3%;
   position: relative;
   color: black;
@@ -291,14 +291,6 @@ header {
   position: relative;
   color: black;
   font-weight: 500;
-}
-
-@media screen and (max-width: 700px) {
-  .headline-img-1 {
-    background-size: 160%;
-    width: 100%;
-    height: 100%;
-  }
 }
 
 /*Vis flere*/
@@ -366,30 +358,6 @@ header {
 
 .designskolen i {
   position: relative;
-}
-
-@media screen and (max-width: 900px) {
-  .oplevelser-info-container {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  .oplevelser-info-container p {
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .oplevelser-info-container a,
-  .oplevelser-info-container p {
-    font-size: 1.5rem;
-  }
-  .oplevelser-overview h2 {
-    font-size: 2rem;
-  }
 }
 
 /*Nyflytter artikler*/
@@ -469,38 +437,6 @@ header {
   text-align: center;
 }
 
-@media screen and (max-width: 950px) {
-  .nyflytter-articles article h3 {
-    font-size: 1.6rem;
-  }
-
-  .nyflytter-articles article p {
-    font-size: 1.3rem;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .nyflytter-articles {
-    flex-direction: column;
-  }
-
-  .nyflytter-articles article h3 {
-    font-size: 1.9rem;
-  }
-
-  .nyflytter-articles article p {
-    font-size: 1.6rem;
-  }
-
-  .nyflytter-articles article {
-    margin-bottom: 20px;
-  }
-
-  .nyflytter-articles article:last-child {
-    margin-bottom: 60px;
-  }
-}
-
 /*Design skolen*/
 .designskolen {
   max-width: 1200px;
@@ -571,10 +507,11 @@ header {
 }
 
 @media screen and (max-width: 900px) {
+  /*Designskolen*/
   .design-txt-container {
-    font-size: 1rem;
+    font-size: 1.1rem;
     width: 400px;
-    bottom: 85px;
+    bottom: 90px;
   }
 
   .design-small-img {
@@ -585,13 +522,13 @@ header {
 
 @media screen and (max-width: 768px) {
   .design-txt-container {
-    font-size: 0.8rem;
-    bottom: 75px;
+    font-size: 1.1rem;
+    bottom: 100px;
     width: 320px;
   }
 
   .design-small-img {
-    bottom: 45px;
+    bottom: 65px;
     margin-bottom: 15px;
   }
 }
@@ -889,15 +826,6 @@ header {
     flex-direction: column;
     gap: 20px;
   }
-
-  .årstid h2 {
-    font-size: 1.8rem;
-  }
-
-  .årstid p:nth-child(2),
-  .årstid p:nth-child(3) {
-    font-size: 1.2rem;
-  }
 }
 
 /*Footer*/
@@ -989,4 +917,112 @@ header {
   text-decoration: none;
   color: rgb(138, 132, 132);
   font-size: 1.3rem;
+}
+
+/*Responsive*/
+@media screen and (max-width: 900px) {
+  .oplevelser-info-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .oplevelser-info-container p {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 842.5px) {
+  .headline-img-2 a {
+    top: 75%;
+    left: 3%;
+  }
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+  /*Blogpost*/
+  .headline-img-2 a,
+  .headline-img-3 a {
+    font-size: 1.4rem;
+    padding: 1.1%;
+    top: 83%;
+  }
+
+  .headline-img-1 a {
+    font-size: 1.4rem;
+    padding: 1.1%;
+    top: 91%;
+  }
+
+  /*Oplevelser*/
+  .oplevelser-info-container a,
+  .oplevelser-info-container p {
+    font-size: 1.5rem;
+  }
+  .oplevelser-overview h2 {
+    font-size: 2.3rem;
+  }
+
+  /*Nyflytter*/
+  .nyflytter-container h2 {
+    font-size: 2.3rem;
+  }
+
+  .nyflytter-container p {
+    font-size: 1.5rem;
+  }
+
+  .nyflytter-articles article p {
+    font-size: 1.4rem;
+  }
+
+  .nyflytter-articles article h3 {
+    font-size: 1rem;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 700px) {
+  /*Blogpost*/
+  .headline-img-1 {
+    background-size: 160%;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*Nyflytter blog section */
+@media screen and (max-width: 950px) {
+  .nyflytter-articles article h3 {
+    font-size: 1.6rem;
+  }
+
+  .nyflytter-articles article p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .nyflytter-articles {
+    flex-direction: column;
+  }
+
+  .nyflytter-articles article h3 {
+    font-size: 1.7rem;
+  }
+
+  .nyflytter-articles article p {
+    font-size: 1.6rem;
+  }
+
+  .nyflytter-articles article {
+    margin-bottom: 20px;
+  }
+
+  .nyflytter-articles article:last-child {
+    margin-bottom: 60px;
+  }
 }
