@@ -125,7 +125,9 @@ html {
   flex-direction: column;
 }
 
-.natteliv-simple article {
+.natteliv-simple article,
+.geografisk-have-simple article,
+.havnen-simple article {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -143,6 +145,12 @@ html {
   transition: all 250ms ease-in-out;
 }
 
+.natteliv-simple img:hover,
+.geografisk-have-simple img:hover,
+.havnen-simple img:hover {
+  background-size: 120%;
+}
+
 .natteliv-simple h3,
 .geografisk-have-simple h3,
 .havnen-simple h3 {
@@ -158,11 +166,15 @@ html {
   font-weight: 500;
 }
 
-.natteliv-simple h3:hover {
+.natteliv-simple h3:hover,
+.geografisk-have-simple h3:hover,
+.havnen-simple h3:hover {
   color: rgb(79, 79, 79);
 }
 
-.natteliv-simple a {
+.natteliv-simple a,
+.geografisk-have-simple a,
+.havnen-simple a {
   text-decoration: none;
 }
 
@@ -179,64 +191,12 @@ html {
   transform: scale(1.1);
 }
 
-.natteliv-simple p {
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  text-align: start;
-  gap: 10px;
-}
-
-.geografisk-have-simple article {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 400px;
-  margin-bottom: 70px;
-}
-
-.geografisk-have-simple img:hover {
-  background-size: 120%;
-}
-
-.geografisk-have-simple h3:hover {
-  color: rgb(79, 79, 79);
-}
-
-.geografisk-have-simple a {
-  text-decoration: none;
-}
-
-.geografisk-have-simple p {
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  text-align: start;
-}
-
-.havnen-simple article {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 400px;
-  margin-bottom: 70px;
-}
-
-.havnen-simple img:hover {
-  background-size: 130%;
-}
-
-.havnen-simple h3:hover {
-  color: rgb(79, 79, 79);
-}
-
-.havnen-simple a {
-  text-decoration: none;
-}
-
+.natteliv-simple p,
+.geografisk-have-simple p,
 .havnen-simple p {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5rem;
   text-align: start;
+  gap: 10px;
 }
