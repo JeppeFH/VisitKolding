@@ -272,8 +272,8 @@ html {
   text-decoration: none;
   background-color: white;
   box-shadow: 10px 10px #ff9a64;
-  top: 70%;
-  left: 0;
+  bottom: 89px;
+  left: 15px;
   position: relative;
   color: black;
   font-weight: 500;
@@ -311,16 +311,22 @@ html {
   font-size: 1.5rem;
   font-weight: 400;
   text-align: start;
-  gap: 10px;
+  position: relative;
+  bottom: 68px;
 }
 
 @media screen and (max-width: 1022px) {
   .img-1 a,
   .img-2 a {
-    font-size: 16px;
     padding: 1.1%;
     top: 82%;
-    left: 3%;
+  }
+
+  .natteliv-simple h3,
+  .geografisk-have-simple h3,
+  .havnen-simple h3 {
+    padding: 1.1%;
+    bottom: 78px;
   }
 }
 
@@ -331,6 +337,13 @@ html {
     padding: 1%;
     top: 80%;
     left: 3%;
+  }
+
+  .natteliv-simple h3,
+  .geografisk-have-simple h3,
+  .havnen-simple h3 {
+    font-size: 14px;
+    padding: 1%;
   }
 }
 
